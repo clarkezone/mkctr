@@ -461,6 +461,7 @@ func layerFromFiles(logf logf, files map[string]string) (v1.Layer, error) {
 }
 
 func tarFile(tw *tar.Writer, src, dst string) error {
+	println("CLARKEZONEDEST %v", dst)
 	file, err := os.Open(src)
 	if err != nil {
 		return err
