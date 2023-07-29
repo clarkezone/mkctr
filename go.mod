@@ -1,4 +1,4 @@
-module github.com/tailscale/mkctr
+module github.com/clarkezone/mkctr
 
 go 1.18
 
