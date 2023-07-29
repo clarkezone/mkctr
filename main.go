@@ -98,6 +98,7 @@ func main() {
 		target     = flag.String("target", "", "build for a specific env (options: flyio)")
 		verbose    = flag.Bool("v", false, "verbose build output")
 	)
+	*verbose = true
 	flag.Parse()
 	if *tagArg == "" {
 		log.Fatal("tags must be set")
